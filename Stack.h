@@ -2,6 +2,7 @@
 #define STACK_H
 
 #include <stdio.h>
+#include "stack_settings.h"
 
 #define DUMPLING
 #define StackCtor(stk, size) Stack_Ctor((stk), (size), #stk, __FILE__, __PRETTY_FUNCTION__, __LINE__)
@@ -11,11 +12,6 @@
     #define StackDump(stk, err) Stack_Dump((stk), (err), __FILE__, __PRETTY_FUNCTION__, __LINE__)
 
 #endif
-
-typedef double elem_t;
-
-extern elem_t      POISON;
-extern const int   MIN_SIZE_DATA;
 
 #ifdef DUMPLING
 

@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include "Stack.h"
 
-extern const char* elem_out;
-
 int main()
 {
 	stack* stk1;
 
 	elem_t op = 0;
-	while( scanf( elem_out, &op))
+	while( scanf(elem_out, &op) == 1)
 	{
 
 		if( op == 1)
