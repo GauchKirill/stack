@@ -8,7 +8,6 @@ typedef double elem_t;
 
 static elem_t       POISON          = 0xDEADF00D;
 static const int    MIN_SIZE_DATA   = 4;
-static const char*  log_file_name   = "log_file.txt";
 static FILE*        log_stream      = nullptr;
 
 

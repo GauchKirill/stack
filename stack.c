@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
+static const char*  log_file_name   = "log_file.txt";
 
 #ifdef DUMPLING
 
