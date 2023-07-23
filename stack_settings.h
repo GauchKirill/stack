@@ -3,10 +3,10 @@
 
 #include <stddef.h>
 
-typedef double elem_t;
-#define             elem_out        "%lf"
+typedef             char*           elem_t;
+#define             elem_out        "%p"
 
-static elem_t       POISON          = 0xDEADF00D;
+static elem_t       POISON          = nullptr;
 static const int    MIN_SIZE_DATA   = 4;
 static FILE*        log_stream      = nullptr;
 
